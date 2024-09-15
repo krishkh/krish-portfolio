@@ -1,0 +1,34 @@
+@keyframes gradient {
+  0% {
+    opacity: 0.6;
+    background: linear-gradient(to bottom, #1d1d1d, #5a492fdc, #1d1d1d);
+    background-position: 0% 50%;
+  }
+  25% {
+    opacity: 0.7;
+    background: linear-gradient(to bottom, #1d1d1d, #6e5a3cdc, #1d1d1d);
+    background-position: 50% 100%;
+  }
+  50% {
+    opacity: 0.8;
+    background: linear-gradient(to bottom, #1d1d1d, #8a6547dc, #1d1d1d);
+    background-position: 100% 50%;
+  }
+  75% {
+    opacity: 0.9;
+    background: linear-gradient(to bottom, #1d1d1d, #6e5a3cdc, #1d1d1d);
+    background-position: 50% 0%;
+  }
+  100% {
+    opacity: 0.6;
+    background: linear-gradient(to bottom, #1d1d1d, #5a492fdc, #1d1d1d);
+    background-position: 0% 50%;
+  }
+}
+
+.animate-gradient {
+  opacity: 0.8;
+  background: linear-gradient(to bottom, #1d1d1d, #5a492fdc, #1d1d1d);
+  background-size: 300% 300%; /* Enhances the range of gradient movement */
+  animation: gradient 3s ease-in-out infinite; /* Slower, smoother animation */
+}
